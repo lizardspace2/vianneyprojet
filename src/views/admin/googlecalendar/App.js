@@ -39,10 +39,12 @@ const formatTooltipContent = (event) => {
 const App = () => {
   const [currentMonth, setCurrentMonth] = useState(getMonth());
   const { monthIndex, showEventModal } = useContext(GlobalContext); // Add selectedEvent state
+  // eslint-disable-next-line
   const [showModifyForm, setShowModifyForm] = useState(false);
   const [selectedActionData, setSelectedActionData] = useState(null);
   const [selectedAction, setSelectedAction] = useState(null); // Renamed for clarity
   const { setDaySelected, setShowEventModal, setSelectedEvent } = useContext(GlobalContext);
+  // eslint-disable-next-line
   const [isModifyActionModalOpen, setModifyActionModalOpen] = useState(false);
   const modifyActionButtonStyle = {
     display: 'none', // This style will hide the button
